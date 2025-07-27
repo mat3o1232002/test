@@ -1,33 +1,19 @@
 name: alarma_comunitaria
-description: Aplicación de alarma comunitaria
-version: 1.0.0+1
+description: App de alarma comunitaria con login de Google
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
-  firebase_core: ^2.15.1  # Paquete fundamental
-  # Añade estos según necesites:
-  firebase_auth: ^4.9.1    # Autenticación
-  cloud_firestore: ^4.8.4  # Base de datos
-  firebase_messaging: ^14.0.0  # Notificaciones push
-  geolocator: ^10.0.0
-  fluttertoast: ^8.2.2
-  cloud_firestore: ^4.9.0
-  firebase_auth: ^4.9.0
-  url_launcher: ^6.1.0  # Para abrir URLs
-
-
   flutter:
-  sdk: flutter
-  http: ^0.13.5
-  url_launcher: ^6.1.0  # Versión actualizada para usar launchUrl
-  provider: ^6.0.5
-
+    sdk: flutter
+  firebase_core: ^2.27.0
+  firebase_auth: ^4.17.4
+  google_sign_in: ^6.2.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0  # Para analysis_options.yaml
-  build_runner: ^2.1.7  # Para generar código automáticamente
-  json_serializable: ^6.1.5  # Para serialización de JSON
+
+flutter:
+  uses-material-design: true
